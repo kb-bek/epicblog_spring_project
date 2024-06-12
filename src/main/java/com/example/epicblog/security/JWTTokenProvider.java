@@ -7,11 +7,14 @@ import io.jsonwebtoken.security.SignatureException;
 import org.slf4j.LoggerFactory;
 import org.slf4j.Logger;
 import org.springframework.security.core.Authentication;
+import org.springframework.stereotype.Component;
 
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
+
+@Component
 public class JWTTokenProvider {
 
     public static final Logger LOGGER = LoggerFactory.getLogger(JWTTokenProvider.class);

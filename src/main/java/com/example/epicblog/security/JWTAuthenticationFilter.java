@@ -20,7 +20,7 @@ import org.springframework.web.filter.OncePerRequestFilter;
 import java.io.IOException;
 import java.util.Collections;
 
-
+@Component
 public class JWTAuthenticationFilter extends OncePerRequestFilter {
 
     public static final Logger LOGGER = LoggerFactory.getLogger(JWTAuthenticationFilter.class);

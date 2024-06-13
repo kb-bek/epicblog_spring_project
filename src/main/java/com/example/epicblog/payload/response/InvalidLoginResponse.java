@@ -1,5 +1,8 @@
 package com.example.epicblog.payload.response;
 
+import lombok.Getter;
+
+@Getter
 public class InvalidLoginResponse {
 
     private String username;

@@ -31,7 +31,7 @@ import java.util.Arrays;
         jsr250Enabled = true,
         prePostEnabled = true
 )
-public class SecurityConfig {
+public class SecurityConfig{
 
     @Autowired
     private JWTAuthenticationEntryPoint jwtAuthenticationEntryPoint;
@@ -69,7 +69,7 @@ public class SecurityConfig {
     }
 
     @Bean
-    public PasswordEncoder bCryptPasswordEncoder() {
+    public BCryptPasswordEncoder bCryptPasswordEncoder() {
         return new BCryptPasswordEncoder();
     }
 

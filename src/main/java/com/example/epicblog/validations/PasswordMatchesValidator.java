@@ -1,7 +1,7 @@
 package com.example.epicblog.validations;
 
 import com.example.epicblog.annotations.PasswordMatches;
-import com.example.epicblog.payload.response.SignUpRequest;
+import com.example.epicblog.payload.request.SignUpRequest;
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;
 

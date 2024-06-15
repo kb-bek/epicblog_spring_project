@@ -1,4 +1,4 @@
-package com.example.epicblog.payload.response;
+package com.example.epicblog.payload.request;
 
 import com.example.epicblog.annotations.PasswordMatches;
 import com.example.epicblog.annotations.ValidEmail;

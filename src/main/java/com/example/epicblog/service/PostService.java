@@ -13,6 +13,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.security.Principal;
 import java.util.List;
@@ -81,6 +82,7 @@ public class PostService {
 
     }
 
+    @Transactional
     public void deletePost(Long postId, Principal principal) {
         Post post = getPostById(postId, principal);
         Optional<ImageModel> imageModel = imageRepository.findByPostId(post.getId());
